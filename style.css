@@ -1,0 +1,84 @@
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    background-color: rgb(238, 251, 247);  
+}
+.child{
+    display: flex;
+    padding: 0 50px 0 50px;
+    justify-content: space-between;
+}
+button{
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(238, 251, 247) ;
+    border-radius: 10Px;
+    padding: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(213, 249, 239)
+}
+h3{
+    font-weight: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.9s;
+    transform: translateX(-200px);
+}
+span{
+    font-weight: 900;
+}
+.box{
+    background-color: beige;
+    margin: auto;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    background-color: rgb(238, 251, 247);  
+}
+
+.show-reponse{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    border-radius: 5px;
+}
+.mousemove{
+    height: 30px;
+    width: 30px;
+    border:2px solid rgb(0, 2, 2);
+    position: absolute;
+    left:50%;
+    top:132px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    transition: 0.2S ease;
+    z-index: -1;
+}
+nav{
+    background: beige ;
+    position: fixed;
+    width: 100%;
+    top:-50px;
+}
+/* nav::after son apercu afficher un truc blanc sur la nav et suis la le mouvement de la souris grâce à JS */
+nav::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: radial-gradient(circle closest-side, rgba(219, 141, 141, 0.94) transparent);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.25s;
+    z-index: 20;
+    opacity: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0; 
+ 
+}
